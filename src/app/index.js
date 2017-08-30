@@ -15,7 +15,7 @@ class Body extends React.Component {
       nick: "odun",
       comment: "ServeResource() serves all static files and this function was referenced in line 19 of the first screenshot. Don’t worry about how they work for now. I’ll try to make a video to explain this properly and update here."
     };
-    var comms = [
+    var initialComms = [
       user1,
       user2
     ];
@@ -28,7 +28,7 @@ class Body extends React.Component {
           <Post/>
         </div>
         <div>
-          <Comments comms={comms} />
+          <Comments comms={initialComms} />
         </div>
       </div>
     );

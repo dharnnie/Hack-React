@@ -1,24 +1,32 @@
 import React from "react";
 
 export class Comments extends React.Component {
+  constructor(props){
+    super();
+    this.state = {
+      comms: props.initialComms,
+    };
+  }
+  onComment(){
+
+  }
   render() {
     return(
-
       <div>
         // LEAVE A COMMENT
         <div className="">
             <div className="grey">
                 <ul className="collection grey">
                     {this.props.comms.map(
-                      (comms,i)=>
+                      (payload,i)=>
                       <li className="collection-item avatar" key={i}>
                           <i className="material-icons circle">create</i>
-                          <span className="title"><strong>{comms.nick}</strong></span>
+                          <span className="title"><strong>{payload.nick}</strong></span>
                           <p>
-                              {comms.comment}
+                              {payload.comment}
                           </p>
-                      </li>)}
-
+                      </li>
+                    )}
                 </ul>
             </div>
         </div>
