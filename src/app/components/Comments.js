@@ -1,12 +1,7 @@
 import React from "react";
 
 export class Comments extends React.Component {
-  constructor(props){
-    super();
-    this.state = {
-      comms: props.initialComms,
-    };
-  }
+  
   onComment(){
 
   }
