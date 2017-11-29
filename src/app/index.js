@@ -20,25 +20,18 @@ class Body extends Component {
             user1,
             user2
         ];
-        return ( <
-            div >
-            <
-            div >
-            <
-            Header / >
-            <
-            /div> <
-            div >
-            <
-            Post / >
-            <
-            /div> <
-            div >
-            <
-            Comments comms = { initComms }
-            /> < /
-            div > <
-            /div>
+        return (
+          <div >
+            <div >
+              <Header/>
+                </div>
+                  <div>
+                    <Post/>
+                  </div>
+                <div>
+              <Comments comms = { initComms }/>
+            </div>
+          </div>
         );
     }
 }
